@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+
+    #demo {
+      width: 50%;
+      margin: auto;
+    }
+
+    wc-slider {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../dist/src/wc-slider.js';
+
+    const singleTickList = [10];
+    const dualTickList = [10, 20];
+    const moreTickList = [10, 20, 40];
+
+    render(
+      html`
+        <p>单刻度</p>
+        <wc-slider .tickList=${singleTickList}>
+        </wc-slider>
+        <p>二刻度</p>
+        <wc-slider .tickList=${dualTickList}>
+        </wc-slider>
+        <p>多刻度</p>
+        <wc-slider .tickList=${moreTickList}>
+        </wc-slider>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
