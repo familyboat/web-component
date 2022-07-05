@@ -14,7 +14,7 @@
     "analyze": "cem analyze --litelement",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "build": "tsc && npm run analyze -- --exclude dist",
-    "prepublish": "tsc && npm run analyze -- --exclude dist && mv package.json ./dist/package.json",
+    "prepublish": "tsc && npm run analyze -- --exclude dist && cp package.json ./dist/package.json",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore"
   },
@@ -76,7 +76,7 @@
       "prettier --write"
     ]
   },
-  "gitHead": "6db15398c24c56d63fe25212c0f394baa1fc3da2",
+  "gitHead": "258369c7bf4a16ad88fe9ee89a59c1f6fc8e06f0",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/",
