@@ -5,6 +5,6 @@ const ghpages = require('gh-pages');
 
 const dir = 'dist';
 ghpages.publish(dir, {
-  repo: 'git@github.com:familyboat/web-component.git',
+  repo: 'git@github.com:familyboat/web-component-example.git',
   dest: 'examples/wc-slider',
-})
+});

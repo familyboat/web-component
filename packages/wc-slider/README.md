@@ -5,14 +5,14 @@ This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) reco
 ## Installation
 
 ```bash
-npm i wc-slider
+npm i @familyboat/wc-slider
 ```
 
 ## Usage
 
 ```html
 <script type="module">
-  import 'wc-slider/wc-slider.js';
+  import '@familyboat/wc-slider/wc-slider.js';
 </script>
 
 <wc-slider></wc-slider>
@@ -31,7 +31,6 @@ To automatically fix linting and formatting errors, run
 ```bash
 npm run format
 ```
-
 
 ## Tooling configs
 

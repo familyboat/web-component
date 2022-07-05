@@ -14,7 +14,7 @@
     "analyze": "cem analyze --litelement",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "build": "tsc && npm run analyze -- --exclude dist",
-    "prepublish": "tsc && npm run analyze -- --exclude dist && cp package.json LICENSE README.md ./dist/",
+    "prepublish": "tsc && npm run analyze -- --exclude dist",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore"
   },
@@ -79,8 +79,7 @@
   "gitHead": "258369c7bf4a16ad88fe9ee89a59c1f6fc8e06f0",
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/",
-    "directory": "dist"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "url": "https://github.com/familyboat/web-component.git",

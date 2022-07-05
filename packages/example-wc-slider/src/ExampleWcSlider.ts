@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { property } from 'lit/decorators.js';
+import '@familyboat/wc-slider/wc-slider.js';
 
 const logo = new URL('../../assets/open-wc-logo.svg', import.meta.url).href;
 
@@ -75,6 +76,7 @@ export class ExampleWcSlider extends LitElement {
           >open-wc</a
         >.
       </p>
+      <wc-slider .tickList=${[1, 2]}></wc-slider>
     `;
   }
 }
