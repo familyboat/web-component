@@ -76,7 +76,7 @@
       "prettier --write"
     ]
   },
-  "gitHead": "682403e73f311981af5efd29b17fd00a0b827de7",
+  "gitHead": "6db15398c24c56d63fe25212c0f394baa1fc3da2",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/",
