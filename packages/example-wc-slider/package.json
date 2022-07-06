@@ -1,6 +1,7 @@
 {
   "name": "example-wc-slider",
   "description": "Webcomponent example-wc-slider following open-wc recommendations",
+  "private": true,
   "license": "MIT",
   "author": "example-wc-slider",
   "version": "1.0.7",
