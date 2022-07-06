@@ -3,7 +3,7 @@
   "description": "Webcomponent example-wc-slider following open-wc recommendations",
   "license": "MIT",
   "author": "example-wc-slider",
-  "version": "0.0.0",
+  "version": "1.0.7",
   "scripts": {
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore",
