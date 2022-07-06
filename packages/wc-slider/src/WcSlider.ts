@@ -19,6 +19,7 @@ export class WcSlider extends LitElement {
       box-sizing: border-box;
       display: block;
 
+      padding-top: 8px;
       padding-bottom: 20px;
     }
 

@@ -970,6 +970,13 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@familyboat/wc-slider@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@familyboat/wc-slider/-/wc-slider-1.0.8.tgz#33cd4089bc43317f966568baaa13b1ef8bc2f8d1"
+  integrity sha512-qe+SLhsG3GugoZsHrai3TwBVkOnT6oP8YGmQs39pBM6hXmyl2AffZNSkDFyTUIfF2LCQsR+TtwDDs5ipHjREQA==
+  dependencies:
+    lit "^2.0.2"
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.npmmirror.com/@humanwhocodes/config-array/-/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
