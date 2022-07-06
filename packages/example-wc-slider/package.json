@@ -83,5 +83,6 @@
       "prettier --write"
     ]
   },
-  "customElements": "custom-elements.json"
+  "customElements": "custom-elements.json",
+  "gitHead": "640b4671384babc50abc1426fa07722ad2ade288"
 }

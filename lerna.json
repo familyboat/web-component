@@ -1,6 +1,6 @@
 {
   "packages": [
-    "packages/*"
+    "packages/wc-*"
   ],
   "useNx": false,
   "version": "1.0.7"
