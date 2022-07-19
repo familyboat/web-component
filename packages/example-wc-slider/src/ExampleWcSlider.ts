@@ -52,6 +52,7 @@ export class ExampleWcSlider extends LitElement {
 
   render() {
     return html`
+      <h2>wc-slider 示例</h2>
       <dl>
         <dt>单刻度</dt>
         <dd><wc-slider .tickList=${[1]}></wc-slider></dd>

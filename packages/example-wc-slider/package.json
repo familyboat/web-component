@@ -12,10 +12,10 @@
     "start:build": "web-dev-server --root-dir dist --app-index index.html --open",
     "analyze": "cem analyze --litelement",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
-    "gh-pages": "node ./scripts/gh-pages.js"
+    "gh-pages": "yarn run build && node ./scripts/gh-pages.js"
   },
   "dependencies": {
-    "@familyboat/wc-slider": "^1.0.8",
+    "@familyboat/wc-slider": "1.0.9",
     "lit": "^2.0.2"
   },
   "devDependencies": {

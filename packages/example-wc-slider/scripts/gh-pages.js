@@ -5,6 +5,7 @@ const ghpages = require('gh-pages');
 
 const dir = 'dist';
 ghpages.publish(dir, {
-  repo: 'git@github.com:familyboat/web-component-example.git',
-  dest: 'examples/wc-slider',
-});
+  repo: 'git@github.com:familyboat/examples.git',
+  dest: 'web-component/wc-slider',
+// eslint-disable-next-line no-console
+}, (err) => {console.log(`building gh page has error: ${err}`)});

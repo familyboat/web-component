@@ -21,6 +21,8 @@ export class WcSlider extends LitElement {
 
       padding-top: 8px;
       padding-bottom: 20px;
+
+      touch-action: none;
     }
 
     .slider {
@@ -136,7 +138,7 @@ export class WcSlider extends LitElement {
     super.connectedCallback();
   }
 
-  activateTick(e: MouseEvent) {
+  activateTick(e: PointerEvent) {
     const { target } = e;
     if (!(target as HTMLElement).classList.contains('tick')) return;
     this.activeIndex = Number((target as HTMLElement).dataset.index);
@@ -146,11 +148,13 @@ export class WcSlider extends LitElement {
     this.activeIndex = null;
   }
 
-  moveTick(e: MouseEvent) {
+  moveTick(e: PointerEvent) {
     if (this.activeIndex === null) return;
-
-    const { currentTarget, clientX } = e;
-    if (currentTarget === null) return;
+    const { currentTarget, clientX, buttons } = e;
+    if (currentTarget === null || buttons === 0) {
+      this.activeIndex = null;
+      return;
+    };
     const { offsetLeft, offsetWidth } = currentTarget as HTMLElement;
     const [low, high] = this.tickRange;
     const newValue =
@@ -186,9 +190,10 @@ export class WcSlider extends LitElement {
     return html`
       <div
         class="slider"
-        @mousedown=${this.activateTick}
-        @mouseup=${this.deactivateTick}
-        @mousemove=${this.moveTick}
+        @pointerdown=${this.activateTick}
+        @pointermove=${this.moveTick}
+        @pointerup=${this.deactivateTick}
+        draggable="false"
       >
         ${this.tickProportionList.map(
           (item, index) => html`
